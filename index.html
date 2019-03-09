@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:hover {
+color:black;
+background-color: rgb(250, 196, 196);
+}
+</style>
+<title>Yarin's Site</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div id="menu">
+<a href="#about">About Me</a> 
+<a href="#photos">My Photos</a> 
+<a href="#playlist">My Playlist</a> 
+<a href="#like">Like</a> 
+<a href="#qrcoder">QR code</a> 
+<a href="#spa">Q&A</a> 
+<a href="#contact">Contact Me</a>
+</div>
+
+<div id="bod" class="section">
+<section id="about" class="section" style="margin-top: 0px">
+
+<br/>
+<H1>About Me</H1>
+<br/>
+My name is Yarin Abergel and I study SISE in the Ben-Gurion university. 
+<br/>
+I am 22 years old and I am from Ashkelon.
+<br/>
+I expect that this course will give me the tools to be a web developer. 
+<br/>
+The most difficult part of this assignment was to understand how to use the HTML and the CSS.
+<br/>
+But overall, It was fun! 
+</section>
+
+<section id="photos" class="section">
+<br/>
+<H1>My Photos</H1>
+<br/>
+
+<img src="pic1.png" alt="hi1" style="width:150px;height:150px;">
+<img src="pic3.png" alt="hi2" style="width:150px;height:150px;">
+<img src="pic2.png" alt="hi3" style="width:150px;height:150px;">
+<br/>
+<img src="pic5.png" alt="hi4" style="width:150px;height:150px;">
+<img src="pic4.png" alt="hi5" style="width:150px;height:150px;">
+<img src="pic6.png" alt="hi6" style="width:150px;height:150px;">
+<br/>
+<img src="pic7.png" alt="hi7" style="width:150px;height:150px;">
+<img src="pic8.png" alt="hi8" style="width:150px;height:150px;">
+<img src="pic9.png" alt="hi9" style="width:150px;height:150px;">
+</section>
+
+<section id="playlist" class="section">
+<br/>
+<H1>My playlist</H1>
+<br/>
+<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T_Yv5i4Ltr0">
+</iframe>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="like" class="section">
+    <br/>
+    <br/>
+    <br/>
+<H1>Give me a like</H1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="qrcoder" class="section">
+    <br/>
+    <br/>
+    <br/>
+<H1>Scan my code</H1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</section>
+
+<section id="spa" class="section">
+    <br/>
+    <br/>
+<H1> Q & A </H1>
+<h3>3 main differences between Web1, Web2 and Web3 </h3>
+<p style="font-weight:bold;">1. </p> <p> Web1 didn't have an interaction with the user. <br/> 
+Search could be done only by looking for the information in the html page. <br/>
+In contrast, in Web2 and Web3, there is an option to search with a query- search engines.  
+</p>
+<p style="font-weight:bold;">2.</p> <p>Pages in Web1 were static. <br/> 
+In contrast, Web2 and Web3 have pages which can be changed <br/>  
+</p>
+<p style="font-weight:bold;">3.</p> <p>I don't have an idea right now. <br/> 
+</p>
+<br/>
+<h3>Same query in Web1 and Web3.</h3>
+<p style="font-weight:bold;">Web1 </p>  
+<p> Preconditions: User had a web page open and a query that he needs to get an answer for. <br/>
+Action: The user is going over the page, and looks for a word or a sentence that seem to be close for what he looks for<br/>
+The user finds something that answers his query and go out of the web page.<br/> 
+postAction: The user has the answer to his query but he spent too much time and effort.</p>
+<p style="font-weight:bold;">Web3 </p>  
+<p> Preconditions: User had a web page open and a query that he needs to get an answer for. <br/>
+Action: The user types the query to a search engine and it returns the best suiting results for his query.<br/>
+The user go over the results and find what he was looking for.<br/> 
+postAction: The user has the answer to his query, he didn't have to spend too much time or effort. It was fast and he just needed to type his query.</p>
+</section>
+<br/>
+<section id="contact" class="section">
+<H1>contact me</H1>
+<br/>
+<h2>Hi, email me for Questions!</h2>
+<form action="mailto:yarin271096@gmail.com" target="_self" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail" required><br>
+Comment:<br>
+<input type="text" size="50" name="comment" required ><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+    
+    
+
+<br/>
+<br/>
+<br/>
+<h1>Nice Seeing you! </h1>
+</section>
+</div>
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });?
+ </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+#menu
+{
+	font-size: 20px;
+	padding: 0%;
+	overflow: hidden;
+	position: fixed;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+	height: 35px;
+	border-style: dashed;
+	border-width: 1.5px;
+	border-color: rgb(219, 108, 108);
+	margin-top: 0%;
+	margin-bottom: 10px;
+	text-decoration-color: antiquewhite;
+	background:rgb(206, 164, 164);
+}
+
+.section 
+{	
+	padding: 0%;
+	font-size: 18px;
+	font-family: Tahoma;
+	margin-top:0%; 
+	text-align:center;
+	margin-bottom: 10px;
+	background:antiquewhite;
+}
+
+#bod 
+{
+	background:antiquewhite;
+	text-align: center;
+	width: 100%; 
+}
+
+
+H1 {
+	font-family: "Comic Sans MS", cursive, sans-serif; 
+	text-shadow: 0px -6px 10px rgb(218, 188, 202);
+	font-style: italic;
+	color:black; 
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+H1:before, H1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1.5px;
+    content: '\a0';
+    background-color: rgb(219, 108, 108);
+}
+H1:before {
+    margin-left: -50%;
+    text-align: right;
+}
