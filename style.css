@@ -13,7 +13,8 @@
 	border-width: 1.5px;
 	border-color: rgb(219, 108, 108);
 	margin-top: 0%;
-	margin-bottom: 10px;
+	margin: 0; 
+	top:0;
 	text-decoration-color: antiquewhite;
 	background:rgb(206, 164, 164);
 }
